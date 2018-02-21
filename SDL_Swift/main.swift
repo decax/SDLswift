@@ -52,7 +52,7 @@ while running {
                     offset /= 2
                 }
                 
-                if keyboardEvent.keySym.mod.contains(.leftShift) && keyboardEvent.keySym.mod.contains(.rightShift) {
+                if keyboardEvent.keySym.mod.contains([.leftShift, .rightShift]) {
                     print("LEFT & RIGHT SHIIIIIIFT")
                 }
             }
