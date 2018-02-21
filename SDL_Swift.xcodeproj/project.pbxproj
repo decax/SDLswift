@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B6B3636E2039DA650058E262 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3636D2039DA650058E262 /* main.swift */; };
+		B6B363772039DAF10058E262 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B363752039DAF10058E262 /* SDL2_image.framework */; };
+		B6B363782039DAF10058E262 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B363762039DAF10058E262 /* SDL2.framework */; };
+		B6B363922039DB720058E262 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638A2039DB710058E262 /* Event.swift */; };
+		B6B363932039DB720058E262 /* SDL_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638B2039DB710058E262 /* SDL_Image.swift */; };
+		B6B363942039DB720058E262 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638C2039DB710058E262 /* Timer.swift */; };
+		B6B363952039DB720058E262 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638D2039DB710058E262 /* Texture.swift */; };
+		B6B363962039DB720058E262 /* Surface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638E2039DB710058E262 /* Surface.swift */; };
+		B6B363972039DB720058E262 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3638F2039DB710058E262 /* Renderer.swift */; };
+		B6B363982039DB720058E262 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B363902039DB710058E262 /* Version.swift */; };
+		B6B363992039DB720058E262 /* SDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B363912039DB720058E262 /* SDL.swift */; };
+		B6B363A0203CEBFC0058E262 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3639F203CEBFC0058E262 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,18 @@
 /* Begin PBXFileReference section */
 		B6B3636A2039DA650058E262 /* SDL_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDL_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B3636D2039DA650058E262 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B6B363752039DAF10058E262 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		B6B363762039DAF10058E262 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B6B3638A2039DB710058E262 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B6B3638B2039DB710058E262 /* SDL_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDL_Image.swift; sourceTree = "<group>"; };
+		B6B3638C2039DB710058E262 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		B6B3638D2039DB710058E262 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		B6B3638E2039DB710058E262 /* Surface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Surface.swift; sourceTree = "<group>"; };
+		B6B3638F2039DB710058E262 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		B6B363902039DB710058E262 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		B6B363912039DB720058E262 /* SDL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDL.swift; sourceTree = "<group>"; };
+		B6B3639B2039DB9E0058E262 /* SDL_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6B3639F203CEBFC0058E262 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B363772039DAF10058E262 /* SDL2_image.framework in Frameworks */,
+				B6B363782039DAF10058E262 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +82,29 @@
 		B6B3636C2039DA650058E262 /* SDL_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B6B3639A2039DB7E0058E262 /* SDL */,
 				B6B3636D2039DA650058E262 /* main.swift */,
+				B6B3639B2039DB9E0058E262 /* SDL_Swift-Bridging-Header.h */,
+				B6B363752039DAF10058E262 /* SDL2_image.framework */,
+				B6B363762039DAF10058E262 /* SDL2.framework */,
 			);
 			path = SDL_Swift;
+			sourceTree = "<group>";
+		};
+		B6B3639A2039DB7E0058E262 /* SDL */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3638A2039DB710058E262 /* Event.swift */,
+				B6B3638F2039DB710058E262 /* Renderer.swift */,
+				B6B3638B2039DB710058E262 /* SDL_Image.swift */,
+				B6B363912039DB720058E262 /* SDL.swift */,
+				B6B3638E2039DB710058E262 /* Surface.swift */,
+				B6B3638D2039DB710058E262 /* Texture.swift */,
+				B6B3638C2039DB710058E262 /* Timer.swift */,
+				B6B363902039DB710058E262 /* Version.swift */,
+				B6B3639F203CEBFC0058E262 /* Keyboard.swift */,
+			);
+			path = SDL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +139,7 @@
 				TargetAttributes = {
 					B6B363692039DA650058E262 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,7 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B363932039DB720058E262 /* SDL_Image.swift in Sources */,
+				B6B363962039DB720058E262 /* Surface.swift in Sources */,
+				B6B363A0203CEBFC0058E262 /* Keyboard.swift in Sources */,
+				B6B363972039DB720058E262 /* Renderer.swift in Sources */,
+				B6B363952039DB720058E262 /* Texture.swift in Sources */,
+				B6B363922039DB720058E262 /* Event.swift in Sources */,
 				B6B3636E2039DA650058E262 /* main.swift in Sources */,
+				B6B363992039DB720058E262 /* SDL.swift in Sources */,
+				B6B363982039DB720058E262 /* Version.swift in Sources */,
+				B6B363942039DB720058E262 /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +291,17 @@
 		B6B363722039DA650058E262 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV2V7QNGME;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDL_Swift/SDL_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -246,9 +309,16 @@
 		B6B363732039DA650058E262 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV2V7QNGME;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDL_Swift/SDL_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
